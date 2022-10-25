@@ -1,13 +1,13 @@
 //Square Number Calculate
 function squarecalc(){
     var squaresolveanswer = Number(document.getElementById("squaresolve").value * document.getElementById("squaresolve").value);
-    document.getElementById("squareanswer").innerText = squaresolveanswer;  
+    document.getElementById("squareanswer").innerText = comma(squaresolveanswer);  
 }
 
 //Cube Number Calculate
 function cubecalc(){
     var cubesolveanswer = Number(document.getElementById("cubesolve").value * document.getElementById("cubesolve").value * document.getElementById("cubesolve").value);
-    document.getElementById("cubeanswer").innerText = cubesolveanswer;  
+    document.getElementById("cubeanswer").innerText = comma(cubesolveanswer);  
 }
 //Triangle Number Calculate
 function trianglecalc(){
@@ -17,7 +17,7 @@ function trianglecalc(){
     trianglenumberadd1 ++;
     var trianglenumber2 = trianglenumber * trianglenumberadd1; //3
     trianglenumber = trianglenumber2 /2;//1.5
-    document.getElementById("triangleanswer").innerText = trianglenumber;  
+    document.getElementById("triangleanswer").innerText = comma(trianglenumber);  
 }
 //Tetrahedral Number Calculate
 function tetrahedralcalc(){
@@ -30,5 +30,9 @@ function tetrahedralcalc(){
     tetrahedraladd2 --;
     var tetrahedral = tetrahedraladd1 * tetrahedraladd2 * tetrahedraladd3;
     var tetrahedrald6 = tetrahedral /6;
-    document.getElementById("tetrahedralanswer").innerText = tetrahedrald6;  
+    document.getElementById("tetrahedralanswer").innerText = comma(tetrahedrald6);  
+}
+//comma
+function comma(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
