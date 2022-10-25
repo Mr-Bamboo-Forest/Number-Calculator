@@ -10,7 +10,7 @@
     <div>
         <h1>Square Numbers</h1>
         <p>Which square number:</p>
-        <input type="text" id="squaresolve" onchange="saveValue(this);"></input>
+        <input type="number" id="squaresolve" onchange="saveValue(this);"></input>
         <br>
         <p id="squareanswer"></p>
         <br>
@@ -20,7 +20,7 @@
     <div>
         <h1>Cube Numbers</h1>
         <p>Which cube number:</p>
-        <input type="text" id="cubesolve" onchange="saveValue(this);"></input>
+        <input type="number" id="cubesolve" onchange="saveValue(this);"></input>
         <br>
         <p id="cubeanswer"></p>
         <br>
@@ -30,11 +30,21 @@
     <div>
         <h1>Triangular Numbers</h1>
         <p>Which triangle number:</p>
-        <input type="text" id="trianglesolve" onchange="saveValue(this);"></input>
+        <input type="number" id="trianglesolve" onchange="saveValue(this);"></input>
         <br>
         <p id="triangleanswer"></p>
         <br>
         <button onclick="trianglecalc()">Calculate Triangle Number</button>
+    </div>
+    <br>
+    <div>
+        <h1>Tetrahedral Numbers</h1>
+        <p>Which tetrahedral number:</p>
+        <input type="number" id="tetrahedralsolve" onchange="saveValue(this);"></input>
+        <br>
+        <p id="tetrahedralanswer"></p>
+        <br>
+        <button onclick="tetrahedralcalc()">Calculate Tetrahedral Number</button>
     </div>
     <br>
     <br>
