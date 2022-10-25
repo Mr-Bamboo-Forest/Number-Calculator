@@ -54,3 +54,26 @@ p{
     padding-top: 5px;
     font-family: Arial, Helvetica, sans-serif;
 }
+a:link {
+    color: red;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: orangered;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+  }
