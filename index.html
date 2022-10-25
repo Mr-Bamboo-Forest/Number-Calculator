@@ -1,0 +1,31 @@
+<head>
+    <title>The Numbers Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <H1>Numbers Calculator</H1>
+    <br>
+    <div>
+        <h1>Square Numbers</h1>
+        <p>Which square number:</p>
+        <input type="text" id="squaresolve" onchange="saveValue(this);"></input>
+        <br>
+        <p id="squareanswer"></p>
+        <br>
+        <button onclick="squarecalc()">Calculate Square Number</button>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div>
+        <h1>Cube Numbers</h1>
+        <p>Which cube number:</p>
+        <input type="text" id="cubesolve" onchange="saveValue(this);"></input>
+        <br>
+        <p id="cubeanswer"></p>
+        <br>
+        <button onclick="cubecalc()">Calculate Cube Number</button>
+    </div>
+    <script src="script.js"></script>
+</body>
