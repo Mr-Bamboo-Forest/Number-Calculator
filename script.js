@@ -3,7 +3,6 @@ function squarecalc(){
     var squaresolveanswer = Number(document.getElementById("squaresolve").value * document.getElementById("squaresolve").value);
     document.getElementById("squareanswer").innerText = comma(squaresolveanswer);  
 }
-
 //Cube Number Calculate
 function cubecalc(){
     var cubesolveanswer = Number(document.getElementById("cubesolve").value * document.getElementById("cubesolve").value * document.getElementById("cubesolve").value);
@@ -12,11 +11,11 @@ function cubecalc(){
 //Triangle Number Calculate
 function trianglecalc(){
     var trianglesolveanswer = Number(document.getElementById("trianglesolve").value);
-    var trianglenumber = trianglesolveanswer; // 1
+    var trianglenumber = trianglesolveanswer; 
     var trianglenumberadd1 = trianglenumber; 
     trianglenumberadd1 ++;
-    var trianglenumber2 = trianglenumber * trianglenumberadd1; //3
-    trianglenumber = trianglenumber2 /2;//1.5
+    var trianglenumber2 = trianglenumber * trianglenumberadd1; 
+    trianglenumber = trianglenumber2 /2;
     document.getElementById("triangleanswer").innerText = comma(trianglenumber);  
 }
 //Tetrahedral Number Calculate
@@ -31,6 +30,23 @@ function tetrahedralcalc(){
     var tetrahedral = tetrahedraladd1 * tetrahedraladd2 * tetrahedraladd3;
     var tetrahedrald6 = tetrahedral /6;
     document.getElementById("tetrahedralanswer").innerText = comma(tetrahedrald6);  
+}
+//Fibonaci Number Calculate
+function fibo( num){  
+    var n1 = 0;  
+    var n2 = 1;  
+    var temp;  
+    var i = 0;  
+    for (i = 0; i < num; i++){  
+        temp = n1 + n2;  
+        n1 = n2; 
+        n2 = temp;
+    }  
+    return n2;  
+}  
+function fibonaccicalc(){
+    var f1 = Number(document.getElementById("fibonaccisolve").value);  
+    document.getElementById("fibonaccianswer").innerText = comma(fibo(f1));  
 }
 //comma
 function comma(x) {
