@@ -1,21 +1,16 @@
 //Square Number Calculate
 function squarecalc(){
-    var squaresolveanswer = Number(document.getElementById("squaresolve").value * document.getElementById("squaresolve").value);
+    var squaresolveanswer = Number(document.getElementById("squaresolve").value ^ 2);
     document.getElementById("squareanswer").innerText = comma(squaresolveanswer);  
 }
 //Cube Number Calculate
 function cubecalc(){
-    var cubesolveanswer = Number(document.getElementById("cubesolve").value * document.getElementById("cubesolve").value * document.getElementById("cubesolve").value);
+    var cubesolveanswer = Number(document.getElementById("cubesolve").value ^ 3);
     document.getElementById("cubeanswer").innerText = comma(cubesolveanswer);  
 }
 //Triangle Number Calculate
 function trianglecalc(){
-    var trianglesolveanswer = Number(document.getElementById("trianglesolve").value);
-    var trianglenumber = trianglesolveanswer; 
-    var trianglenumberadd1 = trianglenumber; 
-    trianglenumberadd1 ++;
-    var trianglenumber2 = trianglenumber * trianglenumberadd1; 
-    trianglenumber = trianglenumber2 /2;
+    var trianglenumber = Number(document.getElementById("trianglesolve").value * trianglenumber++)/2;
     document.getElementById("triangleanswer").innerText = comma(trianglenumber);  
 }
 //Tetrahedral Number Calculate
