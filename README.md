@@ -8,4 +8,5 @@ Done so far -
 * Cube Numbers
 * Triangular Numbers
 * Tetrahedral Numbers
-* Fibonacci Numbers (The Fibonacci Sequence)
+* Fibonacci Sequence 
+* Arithmetic Progression 
