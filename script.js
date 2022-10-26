@@ -48,6 +48,20 @@ function fibonaccicalc(){
     var f1 = Number(document.getElementById("fibonaccisolve").value);  
     document.getElementById("fibonaccianswer").innerText = comma(fibo(f1));  
 }
+//Arithmetic Progression
+function arithmeticcalc(){
+    const a = Number(document.getElementById("arithmeticsolve1").value), b = Number(document.getElementById("arithmeticsolve2").value);
+    const N = Number(document.getElementById("arithmeticsolvef").value);
+    const findNthTerm = (first, second, num) => {
+        const diff = second - first;
+        const fact = (num - 1) * diff;
+        const term = first + fact;
+        return term;
+    };
+    document.getElementById("arithmeticanswer").innerText = comma(findNthTerm(a, b, N));
+    console.log(findNthTerm(a, b, N));
+}
+
 //comma
 function comma(x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
