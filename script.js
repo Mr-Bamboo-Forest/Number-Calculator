@@ -10,8 +10,13 @@ function cubecalc(){
 }
 //Triangle Number Calculate
 function trianglecalc(){
-    var trianglenumber = Number(document.getElementById("trianglesolve").value * trianglenumber++)/2;
-    document.getElementById("triangleanswer").innerText = comma(trianglenumber);  
+    var trianglesolveanswer = document.getElementById("trianglesolve").value;
+    var trianglenumber = trianglesolveanswer;
+    var trianglenumberadd1 = trianglenumber; 
+    trianglenumberadd1 ++;
+    var trianglenumber2 = trianglenumber * trianglenumberadd1;
+    trianglenumber = trianglenumber2 /2;
+    document.getElementById("triangleanswer").innerText = trianglenumber;
 }
 //Tetrahedral Number Calculate
 function tetrahedralcalc(){
