@@ -10,3 +10,4 @@ Done so far -
 * Tetrahedral Numbers
 * Fibonacci Sequence 
 * Arithmetic Progression 
+* Prime or Composite Number
