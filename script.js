@@ -64,6 +64,9 @@ function arithmeticcalc(){
 function primecalc(){
     var isPrime = "true";
     var corp = Number(document.getElementById("primesolve").value); // corp means composite or prime, not corporation
+    if (corp <= 0){
+        document.getElementById("primeanswer").innerText = "Can't calculate with 0 or a negative number."
+    }
     if (corp === 1) {
         document.getElementById("primeanswer").innerText = "1 is neither prime nor composite number.";
     }
@@ -75,9 +78,9 @@ function primecalc(){
             }
         }
         if (isPrime == "true") {
-            document.getElementById("primeanswer").innerText = comma((corp)) + (" is a prime number.");
+            document.getElementById("primeanswer").innerText = comma((corp)) + (" is a prime number (not a composite number).");
         } else {
-            document.getElementById("primeanswer").innerText = comma((corp)) + (" is not a prime number.");
+            document.getElementById("primeanswer").innerText = comma((corp)) + (" is a composite number (not a prime number).");
         }
     }
 }
