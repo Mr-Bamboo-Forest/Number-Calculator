@@ -59,7 +59,27 @@ function arithmeticcalc(){
         return term;
     };
     document.getElementById("arithmeticanswer").innerText = comma(findNthTerm(a, b, N));
-    console.log(findNthTerm(a, b, N));
+}
+//Prime or Composite?
+function primecalc(){
+    var isPrime = "true";
+    var corp = Number(document.getElementById("primesolve").value); // corp means composite or prime, not corporation
+    if (corp === 1) {
+        document.getElementById("primeanswer").innerText = "1 is neither prime nor composite number.";
+    }
+    else if (corp > 1) {
+        for (let z = 2; z < corp; z++) {
+            if (corp % z == 0) {
+                isPrime = "false";
+                break;
+            }
+        }
+        if (isPrime == "true") {
+            document.getElementById("primeanswer").innerText = comma((corp)) + (" is a prime number.");
+        } else {
+            document.getElementById("primeanswer").innerText = comma((corp)) + (" is not a prime number.");
+        }
+    }
 }
 
 //comma
