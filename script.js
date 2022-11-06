@@ -16,7 +16,7 @@ function trianglecalc(){
     trianglenumberadd1 ++;
     var trianglenumber2 = trianglenumber * trianglenumberadd1;
     trianglenumber = trianglenumber2 /2;
-    document.getElementById("triangleanswer").innerText = trianglenumber;
+    document.getElementById("triangleanswer").innerText = comma(trianglenumber);
 }
 //Tetrahedral Number Calculate
 function tetrahedralcalc(){
