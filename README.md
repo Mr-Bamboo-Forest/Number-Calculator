@@ -3,6 +3,8 @@ Solve different number equations such as square numbers, cube numbers, triangula
 
 https://mr-bamboo-forest.github.io/Number-Calculator/
 
+Remember to ⭐ and 👀 the repository. It boosts my ego.
+
 Done so far - 
 * Square Numbers
 * Cube Numbers
