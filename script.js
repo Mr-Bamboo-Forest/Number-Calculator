@@ -91,9 +91,10 @@ function circlecalc(){
         var CircumferenceDiameter3 = (CircumferenceDiameter * CircumferenceDiameter);
         CircumferenceDiameter3 = CircumferenceDiameter3 * Math.PI;
         CircumferenceDiameter2 = CircumferenceDiameter2;
-        document.getElementById("circleanswer").innerText = ("The Circumferenc is equal to ") + CircumferenceDiameter2;
-        document.getElementById("circlediameteranswer").innerText = ("The Diameter is equal to ") + CircumferenceDiameter * 2;
-        document.getElementById("circleareaanswer").innerText = ("The Area is equal to ") + CircumferenceDiameter3;
+        document.getElementById("circleroundthing").innerText = ("All values are rounded to 5 decimal points.")
+        document.getElementById("circleanswer").innerText = ("Circumferenc = ") + Math.round((CircumferenceDiameter2 + Number.EPSILON) * 100000) / 100000;
+        document.getElementById("circlediameteranswer").innerText = ("Diameter = ") + Math.round(((CircumferenceDiameter * 2) + Number.EPSILON) * 100000) / 100000;
+        document.getElementById("circleareaanswer").innerText = ("Area = ") + Math.round((CircumferenceDiameter3 + Number.EPSILON) * 100000) / 100000;
 };
 //comma
 function comma(x) {
