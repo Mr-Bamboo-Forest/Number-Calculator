@@ -86,15 +86,21 @@ function primecalc(){
 }
 //Circle Calculate
 function circlecalc(){
-        var CircumferenceDiameter = document.getElementById("CircumferenceDiameterSolve").value;
-        var CircumferenceDiameter2 = CircumferenceDiameter * 2 * Math.PI;
-        var CircumferenceDiameter3 = (CircumferenceDiameter * CircumferenceDiameter);
-        CircumferenceDiameter3 = CircumferenceDiameter3 * Math.PI;
-        CircumferenceDiameter2 = CircumferenceDiameter2;
-        document.getElementById("circleroundthing").innerText = ("All values are rounded to 5 decimal points.")
-        document.getElementById("circleanswer").innerText = ("Circumferenc = ") + Math.round((CircumferenceDiameter2 + Number.EPSILON) * 100000) / 100000;
-        document.getElementById("circlediameteranswer").innerText = ("Diameter = ") + Math.round(((CircumferenceDiameter * 2) + Number.EPSILON) * 100000) / 100000;
-        document.getElementById("circleareaanswer").innerText = ("Area = ") + Math.round((CircumferenceDiameter3 + Number.EPSILON) * 100000) / 100000;
+    var CircumferenceDiameter = document.getElementById("CircumferenceDiameterSolve").value;
+    var CircumferenceDiameter2 = CircumferenceDiameter * 2 * Math.PI;
+    var CircumferenceDiameter3 = (CircumferenceDiameter * CircumferenceDiameter);
+    CircumferenceDiameter3 = CircumferenceDiameter3 * Math.PI;
+    CircumferenceDiameter2 = CircumferenceDiameter2;
+    document.getElementById("circleroundthing").innerText = ("All values are rounded to 5 decimal points.");
+    document.getElementById("circleanswer").innerText = ("Circumferenc = ") + Math.round((CircumferenceDiameter2 + Number.EPSILON) * 100000) / 100000;
+    document.getElementById("circlediameteranswer").innerText = ("Diameter = ") + Math.round(((CircumferenceDiameter * 2) + Number.EPSILON) * 100000) / 100000;
+    document.getElementById("circleareaanswer").innerText = ("Area = ") + Math.round((CircumferenceDiameter3 + Number.EPSILON) * 100000) / 100000;
+};
+function circlecalcradius(){
+    var diameter = document.getElementById("RadiusSolve").value;
+    var radius = diameter * 2;
+    document.getElementById("circleroundthing2").innerText = ("All values are rounded to 5 decimal points.");
+    document.getElementById("circleradius").innerText = ("Radius = ") + Math.round((radius + Number.EPSILON) * 100000) / 100000;
 };
 //comma
 function comma(x) {
