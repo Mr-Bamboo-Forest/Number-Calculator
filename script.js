@@ -110,6 +110,14 @@ function choosenumber(){
     }
     document.getElementById("randomanswer").innerText = ("Your random number (inclusive of 1 and ") + secondrandomnumber + (") is ") + randomnumberfinal;
 };
+function calculateloan() {
+    var loanamount = Number(document.getElementById("loanamount").value);
+    var numberofyearstopayloan = Number(document.getElementById("numberofyear").value);
+    var interestrateofloan = Number(document.getElementById("interestrate").value);
+    var lolol = interestrateofloan / 100;
+    var lololol = loanamount * lolol; 
+    
+};
 
 
 //comma
