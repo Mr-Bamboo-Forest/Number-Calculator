@@ -105,6 +105,9 @@ function circlecalcradius(){
 function choosenumber(){
     var secondrandomnumber = Number(document.getElementById("lastnumber").value);
     var randomnumberfinal = Math.floor(Math.random() * secondrandomnumber) + 1;
+    if (randomnumberfinal == 69) {
+        randomnumberfinal = ("69, lol");
+    }
     document.getElementById("randomanswer").innerText = ("Your random number (inclusive of 1 and ") + secondrandomnumber + (") is ") + randomnumberfinal;
 };
 
