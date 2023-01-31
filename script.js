@@ -102,6 +102,13 @@ function circlecalcradius(){
     document.getElementById("circleroundthing2").innerText = ("All values are rounded to 5 decimal points.");
     document.getElementById("circleradius").innerText = ("Radius = ") + Math.round((radius + Number.EPSILON) * 100000) / 100000;
 };
+function choosenumber(){
+    var secondrandomnumber = Number(document.getElementById("lastnumber").value);
+    var randomnumberfinal = Math.floor(Math.random() * secondrandomnumber) + 1;
+    document.getElementById("randomanswer").innerText = ("Your random number (inclusive of 1 and ") + secondrandomnumber + (") is ") + randomnumberfinal;
+};
+
+
 //comma
 function comma(x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
