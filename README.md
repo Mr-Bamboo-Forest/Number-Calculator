@@ -14,3 +14,7 @@ Done so far -
 * Fibonacci Sequence 
 * Arithmetic Progression 
 * Prime or Composite Number
+* Circle, use radius to find area, circumferenece and diameter 
+* Circle, use diameter to find radius
+* Random Number Generator
+* Loan Calculator (WIP)
