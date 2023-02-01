@@ -96,12 +96,14 @@ function circlecalc(){
     document.getElementById("circlediameteranswer").innerText = ("Diameter = ") + Math.round(((CircumferenceDiameter * 2) + Number.EPSILON) * 100000) / 100000;
     document.getElementById("circleareaanswer").innerText = ("Area = ") + Math.round((CircumferenceDiameter3 + Number.EPSILON) * 100000) / 100000;
 };
+//circles
 function circlecalcradius(){
     var diameter = document.getElementById("RadiusSolve").value;
     var radius = diameter * 2;
     document.getElementById("circleroundthing2").innerText = ("All values are rounded to 5 decimal points.");
     document.getElementById("circleradius").innerText = ("Radius = ") + Math.round((radius + Number.EPSILON) * 100000) / 100000;
 };
+//random number generator
 function choosenumber(){
     var secondrandomnumber = Number(document.getElementById("lastnumber").value);
     var randomnumberfinal = Math.floor(Math.random() * secondrandomnumber) + 1;
@@ -110,42 +112,14 @@ function choosenumber(){
     }
     document.getElementById("randomanswer").innerText = ("Your random number (inclusive of 1 and ") + secondrandomnumber + (") is ") + randomnumberfinal;
 };
-//function calculateloan() {
+//loan calculator
+function calculateloan() {
     var loanamount = Number(document.getElementById("loanamount").value);
     var numberofyearstopayloan = Number(document.getElementById("numberofyear").value);
     var interestrateofloan = Number(document.getElementById("interestrate").value);
     var lolol = interestrateofloan / 100;
     var lololol = loanamount * lolol; 
-
-//};
-
-function calculateloan() {
-    // UI Vars
-    const amount = document.getElementById("loanamount");
-    const interest = document.getElementById("interestrate");
-    var years = document.getElementById("numberofyear");
-    const monthlyPayment = years / 12;
-    const totalPayment = document.getElementById("total-payment");
-    const totalInterest = document.getElementById("total-interest");
-  
-    const principal = parseFloat(amount.value);
-    const calculatedInterest = parseFloat(interest.value) / 100 / 12;
-    const calculatedPayments = parseFloat(years.value) * 12;
-  
-    // Compute monthly payment
-    const x = Math.pow(1 + calculatedInterest, calculatedPayments);
-    const monthly = (principal * x * calculatedInterest) / (x - 1);
-  
-    if (isFinite(monthly)) {
-      monthlyPayment.value = monthly.toFixed(2);
-      totalPayment.value = (monthly * calculatedPayments).toFixed(2);
-      totalInterest.value = (monthly * calculatedPayments - principal).toFixed(2);
-  
-      // Show results
-      document.getElementById("monthlypayment").innerText = "block";
-    } 
-}
-
+};
 
 //comma
 function comma(x) {
