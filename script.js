@@ -110,14 +110,41 @@ function choosenumber(){
     }
     document.getElementById("randomanswer").innerText = ("Your random number (inclusive of 1 and ") + secondrandomnumber + (") is ") + randomnumberfinal;
 };
-function calculateloan() {
+//function calculateloan() {
     var loanamount = Number(document.getElementById("loanamount").value);
     var numberofyearstopayloan = Number(document.getElementById("numberofyear").value);
     var interestrateofloan = Number(document.getElementById("interestrate").value);
     var lolol = interestrateofloan / 100;
     var lololol = loanamount * lolol; 
-    
-};
+
+//};
+
+function calculateloan() {
+    // UI Vars
+    const amount = document.getElementById("loanamount");
+    const interest = document.getElementById("interestrate");
+    var years = document.getElementById("numberofyear");
+    const monthlyPayment = years / 12;
+    const totalPayment = document.getElementById("total-payment");
+    const totalInterest = document.getElementById("total-interest");
+  
+    const principal = parseFloat(amount.value);
+    const calculatedInterest = parseFloat(interest.value) / 100 / 12;
+    const calculatedPayments = parseFloat(years.value) * 12;
+  
+    // Compute monthly payment
+    const x = Math.pow(1 + calculatedInterest, calculatedPayments);
+    const monthly = (principal * x * calculatedInterest) / (x - 1);
+  
+    if (isFinite(monthly)) {
+      monthlyPayment.value = monthly.toFixed(2);
+      totalPayment.value = (monthly * calculatedPayments).toFixed(2);
+      totalInterest.value = (monthly * calculatedPayments - principal).toFixed(2);
+  
+      // Show results
+      document.getElementById("monthlypayment").innerText = "block";
+    } 
+}
 
 
 //comma
