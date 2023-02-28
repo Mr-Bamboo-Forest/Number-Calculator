@@ -114,11 +114,12 @@ function choosenumber(){
 };
 //loan calculator NOT YET FINISHED!
 function calculateloan() {
-    var loanamount = Number(document.getElementById("loanamount").value);
-    var numberofyearstopayloan = Number(document.getElementById("numberofyear").value);
-    var interestrateofloan = Number(document.getElementById("interestrate").value);
-    var lolol = interestrateofloan / 100;
-    var lololol = loanamount * lolol; 
+    var amount = Number(document.getElementById("loanamount").value)
+    var rate = Number(document.getElementById("interestrate").value)
+    var months = Number(document.getElementById("numberofmonths").value)
+    var interest = (amount * (rate * 0.01)) / months;
+    var totalamount = ((amount / months) + interest).toFixed(2);
+    document.getElementById("monthlypayment").innerText = ("Monthly payment (2 d.p., and with interest): ") + totalamount;
 };
 
 //comma
