@@ -112,7 +112,7 @@ function choosenumber(){
     }
     document.getElementById("randomanswer").innerText = ("Your random number (inclusive of 1 and ") + secondrandomnumber + (") is ") + randomnumberfinal;
 };
-//loan calculator NOT YET FINISHED!
+//loan calculator
 function calculateloan() {
     var amount = Number(document.getElementById("loanamount").value)
     var rate = Number(document.getElementById("interestrate").value)
