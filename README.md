@@ -17,4 +17,4 @@ Done so far -
 * Circle, use radius to find area, circumferenece and diameter 
 * Circle, use diameter to find radius
 * Random Number Generator
-* Loan Calculator (WIP)
+* Loan Calculator
