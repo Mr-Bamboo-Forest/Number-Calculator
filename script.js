@@ -120,8 +120,9 @@ function calculateloan() {
     var interest = (amount * (rate * 0.01)) / months;
     var totalamount = ((amount / months) + interest).toFixed(2);
     var totalamountwithoutinterest = ((amount / months)).toFixed(2);
-    document.getElementById("monthlypayment").innerText = ("Interest is ") + interest + (" and monthly payment (2 d.p., and with interest) is ") + totalamount;
-    document.getElementById("monthlypaymentwithoutinterest").innerText = ("Monthly payment (2 d.p. and without interest) is ") + totalamountwithoutinterest;
+    document.getElementById("interest").innerText = ("Interest is $") + interest;
+    document.getElementById("monthlypayment").innerText = ("Monthly payment (2 d.p., and with interest) is $") + totalamount;
+    document.getElementById("monthlypaymentwithoutinterest").innerText = ("Monthly payment (2 d.p. and without interest) is $") + totalamountwithoutinterest;
 };
 
 //comma
