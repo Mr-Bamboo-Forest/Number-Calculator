@@ -2,7 +2,7 @@
 
 ## Solve different number equations such as square numbers, cube numbers, triangular numbers etc. (You get the point) 
 
-### https://mr-bamboo-forest.github.io/Number-Calculator/
+### https://mr-bamboo-forest.github.io/Number-Calculator/ 
 
 ### Please give me ideas to make! I really need them!!
 
