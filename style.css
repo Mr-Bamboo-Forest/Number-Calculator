@@ -30,9 +30,18 @@ input{
     text-align: center;
     margin: auto;
     align-self: center;
-    
     font-family: Arial, Helvetica, sans-serif;
 }
+#searchbar{
+  color: lightgrey;
+  background-color: #2b2b2b;
+  border-style: solid;
+  text-align: center;
+  margin: auto;
+  align-self: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 h1{
     font-size: large;
     color: lightgray;
@@ -44,7 +53,7 @@ h1{
     padding-top: 5px;
     font-family: Arial, Helvetica, sans-serif;
 }
-p{
+p, a{
     color: lightgray;
     text-align: center;
     margin:auto;
@@ -54,7 +63,12 @@ p{
     padding-top: 5px;
     font-family: Arial, Helvetica, sans-serif;
 }
-a:link {
+ul {
+  list-style: none;
+  padding: 0;
+	margin: 0;
+}
+/*a:link {
     color: red;
     background-color: transparent;
     text-decoration: none;
@@ -76,4 +90,4 @@ a:link {
     color: yellow;
     background-color: transparent;
     text-decoration: underline;
-  }
+  }*/

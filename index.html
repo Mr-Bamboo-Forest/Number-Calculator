@@ -9,6 +9,28 @@
     <H1>Numbers Calculator</H1>
     <br>
     <div>
+        <br>
+    <input id="searchbar"
+			onkeyup="search_animal()"
+			type="text" name="search"
+			placeholder="Search Calculators..">
+
+		<ul id='list'>
+			<a class="subjects" href="#SquareNumbers">Square Numbers</a>
+			<a class="subjects" href="#CubeNumbers">Cube Numbers</a>
+			<a class="subjects" href="#TriangularNumbers">Trianglular Numbers</a>
+			<a class="subjects" href="#TetrahedralNumbers">Tetrahedral Numbers</a>
+			<a class="subjects" href="#FibonacciNumbers">Fibonacci Numbers</a>
+			<a class="subjects" href="#ArithemticProgression">Arithmetic progression</a>
+			<a class="subjects" href="#PrimeNumberFind">Prime Number Finder</a>
+			<a class="subjects" href="#Circle1">Circle Circumference Calculator</a>
+			<a class="subjects" href="#Circle2">Circle Radius Calculator</a>
+			<a class="subjects" href="#RNG">Random Number Generator</a>
+			<a class="subjects" href="#LC">Loan Calculator</a>
+		</ul>
+    </div>
+    <br>
+    <div id="SquareNumbers">
         <h1>Square Numbers</h1>
         <p>Which square number:</p> 
         <input type="number" id="squaresolve">
@@ -18,7 +40,7 @@
         <button onclick="squarecalc()">Calculate Square Number</button>
     </div>
     <br>
-    <div>
+    <div id="CubeNumbers">
         <h1>Cube Numbers</h1>
         <p>Which cube number:</p>
         <input type="number" id="cubesolve" >
@@ -28,7 +50,7 @@
         <button onclick="cubecalc()">Calculate Cube Number</button>
     </div>
     <br>
-    <div>
+    <div id="TriangularNumbers">
         <h1>Triangular Numbers</h1>
         <p>Which triangle number:</p>
         <input type="number" id="trianglesolve" >
@@ -38,7 +60,7 @@
         <button onclick="trianglecalc()">Calculate Triangle Number</button>
     </div>
     <br>
-    <div>
+    <div id="TetrahedralNumbers">
         <h1>Tetrahedral Numbers</h1>
         <p>Which tetrahedral number:</p>
         <input type="number" id="tetrahedralsolve" >
@@ -48,7 +70,7 @@
         <button onclick="tetrahedralcalc()">Calculate Tetrahedral Number</button>
     </div>
     <br>
-    <div>
+    <div id="FibonacciNumbers">
         <h1>Fibonacci Numbers</h1>
         <p>Which Fibonacci number:</p>
         <input type="number" id="fibonaccisolve" >
@@ -58,7 +80,7 @@
         <button onclick="fibonaccicalc()">Calculate Fibonacci Number</button>
     </div>
     <br> 
-    <div>
+    <div id="ArithmeticProgression">
         <h1>Arithmetic Progression</h1>
         <p>What is the first number of sequence: </p> 
         <input type="number" id="arithmeticsolve1" >
@@ -74,7 +96,7 @@
         <button onclick="arithmeticcalc()">Calculate Arithmetic Number</button>
     </div>
     <br>
-    <div>
+    <div id="PrimeNumberFind">
         <h1>Prime Number Calculator</h1>
         <p>Which number:</p>
         <input type="number" id="primesolve" >
@@ -84,7 +106,7 @@
         <button onclick="primecalc()">Calculate Prime or Composite Number</button>
     </div>
     <br>
-    <div>
+    <div id="Circle1">
         <h1>Circle Circumference Calculator</h1>
         <p>Enter the radius:</p>
         <input type="number" id="CircumferenceDiameterSolve" >
@@ -97,7 +119,7 @@
         <button onclick="circlecalc()">Calculate Circumference and Diameter and Area</button>
     </div>
     <br>
-    <div>
+    <div id="Circle2">
         <h1>Circle Radius Calculator</h1>
         <p>Enter the Diameter:</p>
         <input type="number" id="RadiusSolve" >
@@ -108,7 +130,7 @@
         <button onclick="circlecalcradius()">Calculate Radius</button>
     </div>
     <br> 
-    <div>
+    <div id="RNG">
         <h1>Random Number Generator</h1>
         <p>Will generate number between 1 and (enter last number): </p>
         <input type="number" id="lastnumber" >
@@ -118,7 +140,7 @@
         <button onclick="choosenumber()">Choose a random number</button>
     </div>
     <br> 
-    <div>
+    <div id="LC">
         <h1>Loan Calculator</h1>
         <p>Loan amount: </p>
         <input type="number" id="loanamount" >
