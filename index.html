@@ -1,167 +1,169 @@
 <!DOCTYPE html>
-<head>
-    <title>The Numbers Calculator</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="pfp.jpg" />
-</head>
-<body>
-    <H1>Numbers Calculator</H1>
-    <br>
-    <div>
+<html>
+    <head>
+        <title>The Numbers Calculator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="pfp.jpg" />
+    </head>
+    <body>
+        <H1>Numbers Calculator</H1>
         <br>
-    <input id="searchbar"
-			onkeyup="search_animal()"
-			type="text" name="search"
-			placeholder="Search Calculators..">
+        <div>
+            <br>
+        <input id="searchbar"
+                onkeyup="search_animal()"
+                type="text" name="search"
+                placeholder="Search Calculators..">
 
-		<ul id='list'>
-			<a class="subjects" href="#SquareNumbers">Square Numbers</a>
-			<a class="subjects" href="#CubeNumbers">Cube Numbers</a>
-			<a class="subjects" href="#TriangularNumbers">Trianglular Numbers</a>
-			<a class="subjects" href="#TetrahedralNumbers">Tetrahedral Numbers</a>
-			<a class="subjects" href="#FibonacciNumbers">Fibonacci Numbers</a>
-			<a class="subjects" href="#ArithemticProgression">Arithmetic progression</a>
-			<a class="subjects" href="#PrimeNumberFind">Prime Number Finder</a>
-			<a class="subjects" href="#Circle1">Circle Circumference Calculator</a>
-			<a class="subjects" href="#Circle2">Circle Radius Calculator</a>
-			<a class="subjects" href="#RNG">Random Number Generator</a>
-			<a class="subjects" href="#LC">Loan Calculator</a>
-		</ul>
-    </div>
-    <br>
-    <div id="SquareNumbers">
-        <h1>Square Numbers</h1>
-        <p>Which square number:</p> 
-        <input type="number" id="squaresolve">
+            <ul id='list'>
+                <a class="subjects" href="#SquareNumbers">Square Numbers</a>
+                <a class="subjects" href="#CubeNumbers">Cube Numbers</a>
+                <a class="subjects" href="#TriangularNumbers">Trianglular Numbers</a>
+                <a class="subjects" href="#TetrahedralNumbers">Tetrahedral Numbers</a>
+                <a class="subjects" href="#FibonacciNumbers">Fibonacci Numbers</a>
+                <a class="subjects" href="#ArithemticProgression">Arithmetic progression</a>
+                <a class="subjects" href="#PrimeNumberFind">Prime Number Finder</a>
+                <a class="subjects" href="#Circle1">Circle Circumference Calculator</a>
+                <a class="subjects" href="#Circle2">Circle Radius Calculator</a>
+                <a class="subjects" href="#RNG">Random Number Generator</a>
+                <a class="subjects" href="#LC">Loan Calculator</a>
+            </ul>
+        </div>
         <br>
-        <p id="squareanswer"></p>
+        <div id="SquareNumbers">
+            <h1>Square Numbers</h1>
+            <p>Which square number:</p> 
+            <input type="number" id="squaresolve">
+            <br>
+            <p id="squareanswer"></p>
+            <br>
+            <button onclick="squarecalc()">Calculate Square Number</button>
+        </div>
         <br>
-        <button onclick="squarecalc()">Calculate Square Number</button>
-    </div>
-    <br>
-    <div id="CubeNumbers">
-        <h1>Cube Numbers</h1>
-        <p>Which cube number:</p>
-        <input type="number" id="cubesolve" >
+        <div id="CubeNumbers">
+            <h1>Cube Numbers</h1>
+            <p>Which cube number:</p>
+            <input type="number" id="cubesolve" >
+            <br>
+            <p id="cubeanswer"></p>
+            <br>
+            <button onclick="cubecalc()">Calculate Cube Number</button>
+        </div>
         <br>
-        <p id="cubeanswer"></p>
+        <div id="TriangularNumbers">
+            <h1>Triangular Numbers</h1>
+            <p>Which triangle number:</p>
+            <input type="number" id="trianglesolve" >
+            <br>
+            <p id="triangleanswer"></p>
+            <br>
+            <button onclick="trianglecalc()">Calculate Triangle Number</button>
+        </div>
         <br>
-        <button onclick="cubecalc()">Calculate Cube Number</button>
-    </div>
-    <br>
-    <div id="TriangularNumbers">
-        <h1>Triangular Numbers</h1>
-        <p>Which triangle number:</p>
-        <input type="number" id="trianglesolve" >
+        <div id="TetrahedralNumbers">
+            <h1>Tetrahedral Numbers</h1>
+            <p>Which tetrahedral number:</p>
+            <input type="number" id="tetrahedralsolve" >
+            <br>
+            <p id="tetrahedralanswer"></p>
+            <br>
+            <button onclick="tetrahedralcalc()">Calculate Tetrahedral Number</button>
+        </div>
         <br>
-        <p id="triangleanswer"></p>
-        <br>
-        <button onclick="trianglecalc()">Calculate Triangle Number</button>
-    </div>
-    <br>
-    <div id="TetrahedralNumbers">
-        <h1>Tetrahedral Numbers</h1>
-        <p>Which tetrahedral number:</p>
-        <input type="number" id="tetrahedralsolve" >
-        <br>
-        <p id="tetrahedralanswer"></p>
-        <br>
-        <button onclick="tetrahedralcalc()">Calculate Tetrahedral Number</button>
-    </div>
-    <br>
-    <div id="FibonacciNumbers">
-        <h1>Fibonacci Numbers</h1>
-        <p>Which Fibonacci number:</p>
-        <input type="number" id="fibonaccisolve" >
-        <br>
-        <p id="fibonaccianswer"></p>
-        <br>
-        <button onclick="fibonaccicalc()">Calculate Fibonacci Number</button>
-    </div>
-    <br> 
-    <div id="ArithmeticProgression">
-        <h1>Arithmetic Progression</h1>
-        <p>What is the first number of sequence: </p> 
-        <input type="number" id="arithmeticsolve1" >
-        <br>
-        <p>What is the second number of sequence: </p> 
-        <input type="number" id="arithmeticsolve2" >
-        <br>
-        <p>Which number do you want to solve for: </p> 
-        <input type="number" id="arithmeticsolvef" >
-        <br>
-        <p id="arithmeticanswer"></p>
-        <br>
-        <button onclick="arithmeticcalc()">Calculate Arithmetic Number</button>
-    </div>
-    <br>
-    <div id="PrimeNumberFind">
-        <h1>Prime Number Calculator</h1>
-        <p>Which number:</p>
-        <input type="number" id="primesolve" >
-        <br>
-        <p id="primeanswer"></p>
-        <br>
-        <button onclick="primecalc()">Calculate Prime or Composite Number</button>
-    </div>
-    <br>
-    <div id="Circle1">
-        <h1>Circle Circumference Calculator</h1>
-        <p>Enter the radius:</p>
-        <input type="number" id="CircumferenceDiameterSolve" >
-        <br>
-        <p id="circleroundthing"></p>
-        <p id="circleanswer"></p>
-        <p id="circlediameteranswer"></p>
-        <p id="circleareaanswer"></p>
-        <br>
-        <button onclick="circlecalc()">Calculate Circumference and Diameter and Area</button>
-    </div>
-    <br>
-    <div id="Circle2">
-        <h1>Circle Radius Calculator</h1>
-        <p>Enter the Diameter:</p>
-        <input type="number" id="RadiusSolve" >
-        <br>
-        <p id="circleroundthing2"></p>
-        <p id="circleradius"></p>
-        <br>
-        <button onclick="circlecalcradius()">Calculate Radius</button>
-    </div>
-    <br> 
-    <div id="RNG">
-        <h1>Random Number Generator</h1>
-        <p>Will generate number between 1 and (enter last number): </p>
-        <input type="number" id="lastnumber" >
-        <br>       
-        <p id="randomanswer"></p>
-        <br>
-        <button onclick="choosenumber()">Choose a random number</button>
-    </div>
-    <br> 
-    <div id="LC">
-        <h1>Loan Calculator</h1>
-        <p>Loan amount: </p>
-        <input type="number" id="loanamount" >
-        <p>Enter amount of months: </p>
-        <input type="number" id="numberofmonths">
-        <p>Enter interest rate: </p>
-        <input type="number" id="interestrate">
+        <div id="FibonacciNumbers">
+            <h1>Fibonacci Numbers</h1>
+            <p>Which Fibonacci number:</p>
+            <input type="number" id="fibonaccisolve" >
+            <br>
+            <p id="fibonaccianswer"></p>
+            <br>
+            <button onclick="fibonaccicalc()">Calculate Fibonacci Number</button>
+        </div>
         <br> 
-        <p id="interest"></p>
-        <br> 
-        <p id="monthlypayment"></p>
-        <br> 
-        <p id="monthlypaymentwithoutinterest"></p>
+        <div id="ArithmeticProgression">
+            <h1>Arithmetic Progression</h1>
+            <p>What is the first number of sequence: </p> 
+            <input type="number" id="arithmeticsolve1" >
+            <br>
+            <p>What is the second number of sequence: </p> 
+            <input type="number" id="arithmeticsolve2" >
+            <br>
+            <p>Which number do you want to solve for: </p> 
+            <input type="number" id="arithmeticsolvef" >
+            <br>
+            <p id="arithmeticanswer"></p>
+            <br>
+            <button onclick="arithmeticcalc()">Calculate Arithmetic Number</button>
+        </div>
         <br>
-        <button onclick="calculateloan()">Calculate your loan</button>
-    </div>
-    <br> 
-    <br> 
-    <br>
-    <div>
-        <iframe src="https://mr-bamboo-forest.github.io/Link-Manager/" width="350px" height="378px" loading="lazy"></iframe>
-    </div>
-    <script src="script.js"></script>
-</body>
+        <div id="PrimeNumberFind">
+            <h1>Prime Number Calculator</h1>
+            <p>Which number:</p>
+            <input type="number" id="primesolve" >
+            <br>
+            <p id="primeanswer"></p>
+            <br>
+            <button onclick="primecalc()">Calculate Prime or Composite Number</button>
+        </div>
+        <br>
+        <div id="Circle1">
+            <h1>Circle Circumference Calculator</h1>
+            <p>Enter the radius:</p>
+            <input type="number" id="CircumferenceDiameterSolve" >
+            <br>
+            <p id="circleroundthing"></p>
+            <p id="circleanswer"></p>
+            <p id="circlediameteranswer"></p>
+            <p id="circleareaanswer"></p>
+            <br>
+            <button onclick="circlecalc()">Calculate Circumference and Diameter and Area</button>
+        </div>
+        <br>
+        <div id="Circle2">
+            <h1>Circle Radius Calculator</h1>
+            <p>Enter the Diameter:</p>
+            <input type="number" id="RadiusSolve" >
+            <br>
+            <p id="circleroundthing2"></p>
+            <p id="circleradius"></p>
+            <br>
+            <button onclick="circlecalcradius()">Calculate Radius</button>
+        </div>
+        <br> 
+        <div id="RNG">
+            <h1>Random Number Generator</h1>
+            <p>Will generate number between 1 and (enter last number): </p>
+            <input type="number" id="lastnumber" >
+            <br>       
+            <p id="randomanswer"></p>
+            <br>
+            <button onclick="choosenumber()">Choose a random number</button>
+        </div>
+        <br> 
+        <div id="LC">
+            <h1>Loan Calculator</h1>
+            <p>Loan amount: </p>
+            <input type="number" id="loanamount" >
+            <p>Enter amount of months: </p>
+            <input type="number" id="numberofmonths">
+            <p>Enter interest rate: </p>
+            <input type="number" id="interestrate">
+            <br> 
+            <p id="interest"></p>
+            <br> 
+            <p id="monthlypayment"></p>
+            <br> 
+            <p id="monthlypaymentwithoutinterest"></p>
+            <br>
+            <button onclick="calculateloan()">Calculate your loan</button>
+        </div>
+        <br> 
+        <br> 
+        <br>
+        <div>
+            <iframe src="https://mr-bamboo-forest.github.io/Link-Manager/" width="350px" height="378px" loading="lazy"></iframe>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
