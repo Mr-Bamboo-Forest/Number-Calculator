@@ -8,7 +8,7 @@
 
 ### Remember to ⭐ and 👀 the repository. It boosts my ego.
 
-Done so far - 
+Done so far:
 * Square Numbers
 * Cube Numbers
 * Triangular Numbers
