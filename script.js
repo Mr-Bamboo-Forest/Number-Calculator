@@ -117,7 +117,7 @@ function circlecalc(){
 //circles
 function circlecalcradius(){
     var diameter = document.getElementById("RadiusSolve").value;
-    var radius = diameter * 2;
+    var radius = diameter / 2;
     document.getElementById("circleroundthing2").innerText = ("All values are rounded to 5 decimal points.");
     document.getElementById("circleradius").innerText = ("Radius = ") + Math.round((radius + Number.EPSILON) * 100000) / 100000;
 };
