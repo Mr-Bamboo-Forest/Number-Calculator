@@ -5,9 +5,6 @@
 ### https://mr-bamboo-forest.github.io/Number-Calculator/ 
 
 ### Please give me ideas to make! I really need them!!
-
-### Remember to ⭐ and 👀 the repository. It boosts my ego.
-
 Done so far:
 * Square Numbers
 * Cube Numbers
